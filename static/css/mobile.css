@@ -1,0 +1,56 @@
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 10px;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .designation {
+        font-size: 1em;
+    }
+
+    .color {
+        height: 50px;
+        width: 50px;
+    }
+
+    /* Single column layout */
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-areas: "header"
+                             "sidebar"
+                             "content";
+    }
+
+    sidebar {
+        border-bottom: 1px dashed lightgray;
+    }
+
+    sidebar figure {
+        display: inline-block;
+        float: left;
+        margin: 15px;
+    }
+
+    /* Single column layout */
+    .portfolio {
+        margin-top: 10px;
+        grid-gap: 0%;
+        grid-template-columns: 100%;
+        grid-template-areas: "a"
+                             "b"
+                             "c";
+    }
+}

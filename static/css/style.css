@@ -1,0 +1,173 @@
+body {
+    margin: 15px 8% 20px 3%;
+}
+
+/* Outermost wrapper for the grid system */
+/* 2 column layout, sidebar + header / content */
+.wrapper {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 18% 81%;
+    grid-template-areas: "....... header"
+                         "sidebar content";
+}
+
+main {
+    grid-area: content;
+}
+
+sidebar {
+    grid-area: sidebar;
+}
+
+
+/* ### Header ### */
+
+header {
+    grid-area: header;
+    position: relative;
+    height: 80px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #8096ab;
+}
+
+header div {
+    display: inline-block;
+}
+
+.logo img {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.title {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.name,
+.designation {
+    margin: 0;
+    padding-right: 2px;
+    font-family: "Courier New", monospace, sans-serif;
+    font-weight: normal;
+}
+
+.name {
+    font-size: 3em;
+}
+
+.designation {
+    font-size: 1.2em;
+}
+
+
+/* ### Sidebar ### */
+
+sidebar figure {
+    margin: 0 10px 15px 10px;
+    text-align: center;
+}
+
+.color {
+    height: 75px;
+    width: 75px;
+}
+
+figcaption {
+    color: #666666;
+    font-size: larger;
+}
+
+.color-light-blue {
+    background-color: #02b3e4;
+}
+
+.color-dark-grey {
+    background-color: #2d3c49;
+}
+
+.color-light-grey {
+    background-color: #7d97ad;
+}
+
+
+/* ### Main content ### */
+
+main section {
+    margin-top: 15px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.portfolio-title {
+    font: 2em consolas, monospace, sans-serif;
+    color: gray;
+    margin: 0;
+    padding-left: 5px;
+}
+
+/* Wrapper for the individual portfolio projects */
+/* 3 column layout, project - project - project */
+.portfolio {
+    margin-top: 15px;
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas: "a b c";
+}
+
+.project {
+    margin: 0 0 20px 0;
+}
+
+.col-a {
+    grid-area: a;
+}
+
+.col-b {
+    grid-area: b;
+}
+
+.col-c {
+    grid-area: c;
+}
+
+.project-image {
+    width: 100%;
+}
+
+section figcaption {
+    text-align: center;
+    color: #333;
+}
+
+figcaption h2 {
+    margin: 0;
+}
+
+figcaption a {
+    font-size: 0.8em;
+    word-wrap: break-word;
+}
+
+figcaption a,
+figcaption a:link,
+figcaption a:active,
+figcaption a:visited,
+figcaption a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
