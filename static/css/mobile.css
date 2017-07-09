@@ -34,11 +34,11 @@
                              "content";
     }
 
-    sidebar {
+    aside {
         border-bottom: 1px dashed lightgray;
     }
 
-    sidebar figure {
+    aside figure {
         display: inline-block;
         float: left;
         margin: 15px;

@@ -16,7 +16,7 @@ main {
     grid-area: content;
 }
 
-sidebar {
+aside {
     grid-area: sidebar;
 }
 
@@ -70,7 +70,7 @@ header div {
 
 /* ### Sidebar ### */
 
-sidebar figure {
+aside figure {
     margin: 0 10px 15px 10px;
     text-align: center;
 }
