@@ -2,29 +2,26 @@ body {
     margin: 15px 8% 20px 3%;
 }
 
-/* Outermost wrapper for the grid system */
-/* 2 column layout, sidebar + header / content */
-.wrapper {
-    display: grid;
-    grid-gap: 1%;
-    grid-template-columns: 18% 81%;
-    grid-template-areas: "....... header"
-                         "sidebar content";
+.row {
+    display: flex;
+    flex-direction: row;
+    clear: both;
 }
 
 main {
-    grid-area: content;
+    flex: 1 1 82%;
 }
 
 aside {
-    grid-area: sidebar;
+    flex: 1 1 18%;
 }
 
 
 /* ### Header ### */
 
 header {
-    grid-area: header;
+    width: 82%;
+    float: right;
     position: relative;
     height: 80px;
     padding-top: 15px;
